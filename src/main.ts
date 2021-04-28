@@ -6,12 +6,15 @@ import router from './router';
 import store from './store';
 import 'ant-design-vue/dist/antd.css';
 
-import { Button, message } from 'ant-design-vue';
+import { Button, message, Menu, Layout } from 'ant-design-vue';
 
 const app = createApp(App);
 app.use(store).use(router).mount('#app');
 
 /* Automatically register components under Button, such as Button.Group */
 app.use(Button);
+app.use(Menu);
+app.use(Layout);
+
 
 app.config.globalProperties.$message = message;

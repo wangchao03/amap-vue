@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <a-button type="primary">Primary</a-button>
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <HelloWorld msg="home page" />
   </div>
 </template>
 
